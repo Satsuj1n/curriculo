@@ -331,16 +331,16 @@
         </section>
     </div>
 
-    <button class="print-button" onclick="window.print()">📄 Exportar PDF</button>
+    <button class="print-button" onclick="window.print()" aria-label="Exportar currículo como PDF" tabindex="0">📄 Exportar PDF</button>
 
     <script>
         // Função para exportar como PDF
         // O botão usa window.print() que abre o diálogo de impressão
         // onde você pode selecionar "Salvar como PDF"
         
-        // Adiciona atalho de teclado Ctrl+P
+        // Adiciona atalho de teclado Ctrl+P (Windows/Linux) ou Cmd+P (Mac)
         document.addEventListener('keydown', function(e) {
-            if (e.ctrlKey && e.key === 'p') {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
                 e.preventDefault();
                 window.print();
             }
