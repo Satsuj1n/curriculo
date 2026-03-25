@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Seu Nome</title>
+    <title>Currículo - Felipe Campello D'Albuquerque Lima</title>
     <style>
         * {
             margin: 0;
@@ -29,33 +29,35 @@
 
         .header {
             text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1a472a;
         }
 
         h1 {
-            color: #2c3e50;
+            color: #1a472a;
             font-size: 2.5em;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .subtitle {
-            color: #7f8c8d;
+            color: #2d7a4a;
             font-size: 1.2em;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 15px;
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 0.9em;
         }
 
         .contact-info a {
-            color: #3498db;
+            color: #1a472a;
             text-decoration: none;
         }
 
@@ -64,71 +66,80 @@
         }
 
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         h2 {
-            color: #2c3e50;
-            border-left: 4px solid #3498db;
+            color: #1a472a;
+            border-left: 4px solid #2d7a4a;
             padding-left: 15px;
-            margin-bottom: 20px;
-            font-size: 1.8em;
+            margin-bottom: 12px;
+            font-size: 1.5em;
         }
 
         h3 {
-            color: #34495e;
-            font-size: 1.3em;
-            margin-bottom: 5px;
+            color: #2d7a4a;
+            font-size: 1.1em;
+            margin-bottom: 3px;
         }
 
         .job, .education-item, .project {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
 
         .job-header, .education-header, .project-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
 
         .company, .institution {
             color: #7f8c8d;
             font-style: italic;
+            font-size: 0.9em;
         }
 
         .date {
             color: #95a5a6;
-            font-size: 0.9em;
+            font-size: 0.85em;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: justify;
         }
 
         ul {
             margin-left: 20px;
-            margin-top: 10px;
+            margin-top: 5px;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 4px;
+            font-size: 0.95em;
         }
 
         .skills-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
 
         .skill {
-            background-color: #ecf0f1;
-            padding: 8px 15px;
+            background-color: #e8f5e9;
+            padding: 6px 12px;
             border-radius: 5px;
-            color: #2c3e50;
+            color: #1a472a;
+            border: 1px solid #2d7a4a;
+            font-size: 0.9em;
         }
 
         .print-button {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background-color: #3498db;
+            background-color: #2d7a4a;
             color: white;
             border: none;
             padding: 15px 30px;
@@ -140,22 +151,23 @@
         }
 
         .print-button:hover {
-            background-color: #2980b9;
+            background-color: #1a472a;
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
 
-        /* Estilos para impressão/PDF */
         @media print {
             body {
                 background-color: white;
                 padding: 0;
+                margin: 0;
             }
 
             .container {
                 box-shadow: none;
-                padding: 20px;
+                padding: 15px;
                 max-width: 100%;
+                margin: 0;
             }
 
             .print-button {
@@ -168,6 +180,7 @@
 
             h2 {
                 page-break-after: avoid;
+                margin-top: 0;
             }
 
             a {
@@ -175,8 +188,8 @@
                 text-decoration: none;
             }
 
-            .contact-info {
-                color: #333;
+            p {
+                margin: 0;
             }
         }
 
@@ -205,140 +218,153 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>Seu Nome Completo</h1>
-            <p class="subtitle">Desenvolvedor Full Stack</p>
+            <h1>Felipe Campello D'Albuquerque Lima</h1>
+            <p class="subtitle">Pleno Fullstack Developer | TypeScript/Node.js · Python · Microserviços · Cloud(GCP/AWS) · RPA </p>
             <div class="contact-info">
-                <span>📧 seu.email@exemplo.com</span>
-                <span>📱 (11) 99999-9999</span>
-                <span>📍 São Paulo, SP</span>
-                <a href="https://github.com/seuusuario" target="_blank">🔗 GitHub</a>
-                <a href="https://linkedin.com/in/seuusuario" target="_blank">🔗 LinkedIn</a>
+                <span>📧 felipenehz2003@gmail.com</span>
+                <span>📱 (61) 99286-4664</span>
+                <span>📍 Brasília, DF</span>
+                <span><a href="#">💼 LinkedIn</a></span>
+                <span><a href="#">🔗 GitHub</a></span>
             </div>
         </header>
 
         <section class="section">
-            <h2>Sobre Mim</h2>
+            <h2>Resumo Profissional</h2>
             <p>
-                Desenvolvedor apaixonado por tecnologia com experiência em desenvolvimento web full stack. 
-                Focado em criar soluções eficientes e escaláveis. Sempre buscando aprender novas tecnologias 
-                e aprimorar minhas habilidades para entregar produtos de alta qualidade.
+                Full Stack Developer com 2+ anos de experiência em desenvolvimento de microserviços escaláveis, APIs e sistemas distribuídos.
+                Proficiência em TypeScript/Node.js e Python, com expertise em arquitetura de serviços, observabilidade e práticas DevOps.
+                Histórico comprovado de entregar soluções de impacto: 99.98% uptime, latência reduzida 45%, otimizações 60%.
+                Forte atuação em times ágeis com responsabilidade ponta a ponta, desde planejamento com Produto até deploy e observabilidade.
+                Comprometido com código limpo, testes robustos, documentação clara e mentoria de pares.
             </p>
         </section>
 
         <section class="section">
             <h2>Experiência Profissional</h2>
-            
             <div class="job">
                 <div class="job-header">
                     <div>
-                        <h3>Desenvolvedor Full Stack</h3>
-                        <p class="company">Empresa XYZ Ltda.</p>
+                        <h3>Full Stack Developer (Backend & Automação)</h3>
+                        <p class="company">iZJob</p>
                     </div>
-                    <span class="date">Jan 2022 - Presente</span>
+                    <span class="date">Março 2026 - Atual</span>
                 </div>
                 <ul>
-                    <li>Desenvolvimento de aplicações web utilizando React e Node.js</li>
-                    <li>Implementação de APIs RESTful e integração com bancos de dados</li>
-                    <li>Colaboração com equipe multidisciplinar usando metodologias ágeis</li>
-                    <li>Melhoria de performance resultando em redução de 40% no tempo de carregamento</li>
+                    <li>Desenvolvimento de soluções Full Stack para automação e RPA, com responsabilidade ponta a ponta (design, implementação, testes e monitoramento)</li>
+                    <li>Implementação de fluxos automatizados robustos com SeleniumBase, tratando edge cases (popups, timeouts, retries) e garantindo 95%+ taxa de sucesso em execuções</li>
+                    <li>Integração entre sistemas legados e serviços web modernos através de APIs bem estruturadas em Python/Django, com logging estruturado e alertas de falha</li>
+                    <li>Otimização de automações com cache distribuído, throttling e paralelização, reduzindo tempo operacional em 40% e liberando 10+ horas/semana de processamento manual</li>
+                    <li>Monitoramento end-to-end com dashboards e observabilidade, permitindo rastreabilidade completa de execuções e rápida identificação de gargalos e anomalias</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
                     <div>
-                        <h3>Desenvolvedor Front-end</h3>
-                        <p class="company">Startup ABC</p>
+                        <h3>Full Stack Developer (Backend & DevOps)</h3>
+                        <p class="company">Coco Bambu Restaurante</p>
                     </div>
-                    <span class="date">Jun 2020 - Dez 2021</span>
+                    <span class="date">Agosto 2024 - Março 2026</span>
                 </div>
                 <ul>
-                    <li>Criação de interfaces responsivas e acessíveis</li>
-                    <li>Implementação de testes automatizados com Jest e React Testing Library</li>
-                    <li>Participação em code reviews e documentação técnica</li>
+                    <li>Desenvolveu múltiplos microserviços independentes (Python/FastAPI e Node.js) para domínios críticos (pedidos, pagamentos, integrações), com responsabilidade ponta a ponta (planejamento, implementação, deploy e observabilidade)</li>
+                    <li>Implementação de APIs escaláveis com retry logic, circuit breaker, rate limiting e event streaming (Pub/Sub), processando 10.000+ requisições/dia com 99.98% de sucesso</li>
+                    <li>Modelagem de dados com TypeORM/SQLAlchemy, otimização de queries (índices, 60% redução em query time), cache distribuído com Redis/ElastiCache e gerenciamento de múltiplos data stores (PostgreSQL, MongoDB, Firestore)</li>
+                    <li>Deploy de 20+ serviços containerizados em Kubernetes (GCP), auto-scaling baseado em métricas, infrastructure as code (Terraform, Helm) e CI/CD (GitHub Actions, Cloud Build)</li>
+                    <li>Instrumentação com New Relic/GCP Monitoring, alertas baseados em SLOs, testes automatizados (Jest) e code reviews rigorosos. Documentação de decisões arquiteturais elevando a régua do time</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>Monitor de Programação (Python & Engenharia de Software)</h3>
+                        <p class="company">Universidade de Brasília (UnB)</p>
+                    </div>
+                    <span class="date">Agosto 2022 - Atual</span>
+                </div>
+                <ul>
+                    <li>Mentoria de 50+ estudantes em programação Python, algoritmos, estruturas de dados e boas práticas de engenharia de software</li>
+                    <li>Foco em resolução de problemas reais, code review collaborativo e padrões de design</li>
+                    <li>Desenvolvimento de materiais didáticos cobrindo conceitos avançados de APIs, sistemas distribuídos, otimização e SOLID, preparando alunos para desafios técnicos em ambientes profissionais</li>
                 </ul>
             </div>
         </section>
 
         <section class="section">
             <h2>Formação Acadêmica</h2>
-            
-            <div class="education-item">
-                <div class="education-header">
-                    <div>
-                        <h3>Bacharelado em Ciência da Computação</h3>
-                        <p class="institution">Universidade Federal de São Paulo</p>
-                    </div>
-                    <span class="date">2017 - 2021</span>
-                </div>
-            </div>
 
             <div class="education-item">
                 <div class="education-header">
                     <div>
-                        <h3>Curso de Desenvolvimento Web Full Stack</h3>
-                        <p class="institution">Plataforma Online</p>
+                        <h3>Licenciatura em Computação</h3>
+                        <p class="institution">Universidade de Brasília (UnB)</p>
                     </div>
-                    <span class="date">2019</span>
+                    <span class="date">Em Andamento</span>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2>Habilidades Técnicas</h2>
+            <h2>Competências & Tecnologias</h2>
             <div class="skills-container">
-                <span class="skill">JavaScript</span>
                 <span class="skill">TypeScript</span>
-                <span class="skill">React</span>
                 <span class="skill">Node.js</span>
-                <span class="skill">Express</span>
-                <span class="skill">HTML5</span>
-                <span class="skill">CSS3</span>
-                <span class="skill">Git</span>
-                <span class="skill">SQL</span>
+                <span class="skill">Express.js</span>
+                <span class="skill">Python</span>
+                <span class="skill">FastAPI</span>
+                <span class="skill">Django</span>
+                <span class="skill">APIs REST</span>
+                <span class="skill">Eventos & Pub/Sub</span>
+                <span class="skill">TypeORM</span>
+                <span class="skill">SQLAlchemy</span>
+                <span class="skill">PostgreSQL</span>
+                <span class="skill">Cloud SQL</span>
                 <span class="skill">MongoDB</span>
-                <span class="skill">REST APIs</span>
+                <span class="skill">Firebase</span>
+                <span class="skill">DynamoDB</span>
+                <span class="skill">Redis</span>
+                <span class="skill">ElastiCache</span>
+                <span class="skill">Kubernetes</span>
                 <span class="skill">Docker</span>
+                <span class="skill">GCP</span>
+                <span class="skill">AWS</span>
+                <span class="skill">CI/CD</span>
+                <span class="skill">GitHub Actions</span>
+                <span class="skill">Cloud Build</span>
+                <span class="skill">Terraform</span>
+                <span class="skill">Helm</span>
+                <span class="skill">ArgoCD</span>
+                <span class="skill">Observabilidade</span>
+                <span class="skill">New Relic</span>
+                <span class="skill">GCP Monitoring</span>
+                <span class="skill">Grafana</span>
+                <span class="skill">Jest</span>
+                <span class="skill">Testes Automatizados</span>
+                <span class="skill">Microserviços</span>
+                <span class="skill">Sistemas Distribuídos</span>
+                <span class="skill">React Native</span>
+                <span class="skill">Flutter</span>
+                <span class="skill">RabbitMQ</span>
+                <span class="skill">SOLID</span>
+                <span class="skill">Arquitetura Escalável</span>
             </div>
         </section>
 
         <section class="section">
-            <h2>Projetos</h2>
-            
-            <div class="project">
-                <div class="project-header">
-                    <h3>Sistema de Gerenciamento de Tarefas</h3>
-                    <span class="date">2023</span>
-                </div>
-                <p>Aplicação web para gerenciamento de tarefas com funcionalidades de colaboração em equipe. Desenvolvida com React, Node.js e MongoDB.</p>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <h3>E-commerce Responsivo</h3>
-                    <span class="date">2022</span>
-                </div>
-                <p>Plataforma de e-commerce completa com carrinho de compras, sistema de pagamento e painel administrativo.</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Idiomas</h2>
-            <ul>
-                <li><strong>Português:</strong> Nativo</li>
-                <li><strong>Inglês:</strong> Avançado (leitura, escrita e conversação)</li>
-            </ul>
+            <h2>Objetivo Profissional</h2>
+            <p>
+                Busco posição como Full Stack Developer em times que valorizam ownership ponta a ponta, arquitetura escalável e excelência técnica.
+                Especialmente interessado em desafios envolvendo microserviços, sistemas distribuídos, APIs robustas e contexto de produto.
+                Comprometido com entrega de valor, documentação clara, mentoria de pares e evolução contínua de práticas de engenharia de software.
+            </p>
         </section>
     </div>
 
     <button class="print-button" onclick="window.print()" aria-label="Exportar currículo como PDF" tabindex="0">📄 Exportar PDF</button>
 
     <script>
-        // Função para exportar como PDF
-        // O botão usa window.print() que abre o diálogo de impressão
-        // onde você pode selecionar "Salvar como PDF"
-        
-        // Adiciona atalho de teclado Ctrl+P (Windows/Linux) ou Cmd+P (Mac)
         document.addEventListener('keydown', function(e) {
             if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
                 e.preventDefault();
